@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "93895872077",
+    "firebase_url": "https://modak-ea18f-default-rtdb.firebaseio.com",
+    "project_id": "modak-ea18f",
+    "storage_bucket": "modak-ea18f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93895872077:android:91bee3a9e8a3030ee6d604",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93895872077-sjifvjt9pm2hb3g3ajs3o9djvb8iu8ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkRBwM-wEQ3YdnjrvbZ9iqi_cEeRSjNaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93895872077-sjifvjt9pm2hb3g3ajs3o9djvb8iu8ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

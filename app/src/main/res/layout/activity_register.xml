@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firebase.ResisterActivity">
+
+<EditText
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="140dp"
+    android:ems="10"
+    android:hint="닉네임"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/birth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="생년월일선택"
+    app:layout_constraintEnd_toStartOf="@id/year"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+
+<EditText
+    android:id="@+id/year"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:ems="3"
+    android:hint="1999"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/birth"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+
+<EditText
+    android:id="@+id/year_c"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="년"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/year"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+
+<EditText
+    android:id="@+id/month"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:ems="2"
+    android:hint="12"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/year_c"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+<EditText
+    android:id="@+id/month_c"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="월"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/month"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+
+<EditText
+    android:id="@+id/date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:ems="2"
+    android:hint="31"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/month_c"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+<EditText
+    android:id="@+id/date_c"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="일"
+    app:layout_constraintBottom_toTopOf="@id/edit_id"
+    app:layout_constraintStart_toEndOf="@id/date"
+    app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_birth"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:text="확인"
+        app:layout_constraintBottom_toTopOf="@id/edit_id"
+        app:layout_constraintStart_toEndOf="@id/date_c"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+
+<EditText
+    android:id="@+id/edit_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="아이디"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/birth" />
+
+<EditText
+    android:id="@+id/edit_pw"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:hint="비밀번호"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edit_id" />
+
+<EditText
+    android:id="@+id/edit_pw_re"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:ems="10"
+    android:hint="비밀번호 확인"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.502"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edit_pw" />
+
+<Button
+    android:id="@+id/btn_register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="160dp"
+    android:layout_marginRight="160dp"
+    android:text="회원가입"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edit_pw_re" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
